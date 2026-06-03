@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanfrom Assembly - History Archive</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding-bottom: 60px;
+        }
+
+        /* HEADER SECTION */
+        .header {
+            background: linear-gradient(135deg, #475569 0%, #1e293b 100%);
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .church-logo {
+            width: 70px;
+            height: auto;
+            margin-bottom: 12px;
+            display: inline-block;
+            filter: brightness(0.9);
+        }
+
+        .header h2 {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #cbd5e1;
+            margin-bottom: 2px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* NAVIGATION BAR */
+        .nav-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background-color: #3b82f6;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+        }
+
+        /* CONTAINER STYLINGS */
+        .content-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            margin: 24px 0 12px 4px;
+            font-weight: 700;
+        }
+
+        .card {
+            background-color: #f8fafc;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border: 1px solid #cbd5e1;
+        }
+
+        .card-image {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+            background-color: #fafafa;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            display: block;
+            border: 1px solid #f1f5f9;
+            filter: grayscale(20%);
+            opacity: 0.8;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #e2e8f0;
+            color: #475569;
+        }
+
+        .card-title {
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 6px;
+        }
+
+        .card-time {
+            font-size: 13px;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .card-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #94a3b8;
+        }
+
+        .no-data-msg {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="church-logo.png" class="church-logo" alt="The Church of Pentecost Logo">
+        <h2>THE CHURCH OF PENTECOST</h2>
+        <h1>AMANFROM ENGLISH ASSEMBLY</h1>
+        <p style="color: #cbd5e1; font-weight: 600; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-top: 4px;">
+            📜 PAST ANNOUNCEMENTS ARCHIVE
+        </p>
+    </div>
+
+    <div class="nav-container">
+        <a href="index.html" class="back-btn">
+            ⬅️ RETURN TO LIVE ANNOUNCEMENTS
+        </a>
+    </div>
+
+    <div class="content-container">
+        <div class="section-title">⌛ Concluded Events</div>
+        
+        <div id="archiveContainer">
+            
+            <div class="card" data-expiry="2026-06-07">
+                <img src="WhatsApp Image 3.jpeg" class="card-image" alt="Marriage Ceremony Flyer">
+                <span class="card-tag">Concluded</span>
+                <h1 class="card-title">Holy Matrimony: Elder Thompson D. Amoako & Miss Grace Boatemaa Addo</h1>
+                <div class="card-time">Saturday, 6th June 2026 | 12:00 PM Prompt</div>
+                <p class="card-body">
+                    <strong>ATTENTION ALL MEMBERS!</strong> We are overwhelmed with joy to announce the coming together of our beloved brother and sister in Christ. The Amoakos and Addos cordially invite the entire congregation to witness this beautiful union. Come support them with your prayers and presence!
+                </p>
+            </div>
+
+            <div class="card" data-expiry="2026-11-16">
+                <img src="WhatsApp Image 2.jpeg" class="card-image" alt="Annual Fundraising Flyer">
+                <span class="card-tag">Concluded</span>
+                <h1 class="card-title">THE MEGA OFFERING (2026 Annual Fundraising)</h1>
+                <div class="card-time">Target Deadline: Sunday, 15th Nov 2026</div>
+                <p class="card-body">
+                    The Church of Pentecost, <strong>Amanfrom English Assembly</strong> warmly invites all members and associates to participate in our Annual Fundraising Programme toward the purchase of comfortable, modern auditorium chairs. 
+                </p>
+            </div>
+
+            <div class="card" data-expiry="2026-06-08">
+                <img src="WhatsApp Image 1.jpeg" class="card-image" alt="Communion Service Flyer">
+                <span class="card-tag">Concluded</span>
+                <h1 class="card-title">Sunday Service & Lord's Supper</h1>
+                <div class="card-time">Sunday, 7th June 2026 | 7:00 AM Prompt</div>
+                <p class="card-body">
+                    <strong>COMMUNION SERVICE:</strong> Next week Sunday is a Communion Service. Let us come prepared in heart and mind to partake together at the Lord’s table.
+                </p>
+            </div>
+
+            <div class="card" data-expiry="2026-06-07">
+                <img src="WhatsApp Image 4.jpeg" class="card-image" alt="BIBLE STUDY AND HOME CELL">
+                <span class="card-tag">Concluded</span>
+                <h1 class="card-title">Bible Study & Home Cell Portal</h1>
+                <div class="card-time">Weekly Group Assembly</div>
+                <p class="card-body">
+                    Official Payment Portal for Tithes and Offerings listed under active assembly profiles.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const today = new Date();
+            const currentDateStr = today.toISOString().split('T')[0]; 
+            const cards = document.querySelectorAll('.card[data-expiry]');
+            const container = document.getElementById('archiveContainer');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const expiryDateStr = card.getAttribute('data-expiry');
+                if (currentDateStr < expiryDateStr) {
+                    card.remove();
+                } else {
+                    visibleCount++;
+                }
+            });
+
+            if (visibleCount === 0) {
+                container.innerHTML = '<div class="no-data-msg">No past announcements archived yet!</div>';
+            }
+        });
+    </script>
+</body>
+</html>

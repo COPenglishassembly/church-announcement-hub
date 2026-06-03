@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanfrom English Assembly Media Hub</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding-bottom: 60px;
+        }
+
+        /* HEADER SECTION */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .church-logo {
+            width: 75px;
+            height: auto;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .header h2 {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #93c5fd;
+            margin-bottom: 2px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #bfdbfe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            line-height: 1.4;
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        /* BUTTON NAVIGATION CONTROLLERS */
+        .nav-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .live-btn {
+            background-color: #dc2626;
+            box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3);
+        }
+
+        .history-btn {
+            background-color: #475569;
+            box-shadow: 0 4px 10px rgba(71, 85, 105, 0.2);
+        }
+
+        .history-btn:hover {
+            background-color: #334155;
+        }
+
+        .pulse-dot {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0 { transform: scale(0.8); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.8); opacity: 0.5; }
+        }
+
+        /* CONTENT CONTAINER */
+        .content-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            margin: 24px 0 12px 4px;
+            font-weight: 700;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-image {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+            background-color: #fafafa;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            display: block;
+            border: 1px solid #f1f5f9;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-current { background-color: #ffe4e6; color: #b91c1c; }
+
+        .card-title {
+            font-size: 18px;
+            color: #0f172a;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 6px;
+        }
+
+        .card-time {
+            font-size: 13px;
+            color: #0284c7;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="" class="church-logo" alt="The Church of Pentecost Logo">
+        <h2>THE CHURCH OF PENTECOST</h2>
+        <h1>AMANFROM ENGLISH ASSEMBLY</h1>
+        <p><span class="pulse-dot"></span> <strong>THEME: "The Church Unleashed to Transform Society Through The Gospel and The Power of the Holy Spirit."</strong></p>
+    </div>
+
+    <div class="nav-container">
+        <a href="https://www.facebook.com/share/v/1CuQ1fdVFb/" target="_blank" class="btn live-btn">
+            🎥 WATCH SERVICE LIVE NOW
+        </a>
+        <a href="history.html" class="btn history-btn">
+            📜 VIEW PAST ANNOUNCEMENTS (HISTORY)
+        </a>
+    </div>
+
+    <div class="content-container">
+        <div class="section-title">📌 Latest Announcements</div>
+
+        <div id="announcementContainer">
+            
+            <div class="card" data-expiry="2026-06-07">
+                <span class="card-tag" style="background-color: #e0f2fe; color: #0369a1;">MARRIAGE CEREMONY</span><br>
+                <img src="WhatsApp Image 3.jpeg" class="card-image" alt="Marriage Ceremony Flyer">
+                <span class="card-tag tag-current">🎉 Special Announcement</span>
+                <h1 class="card-title">Holy Matrimony: Elder Thompson D. Amoako & Miss Grace Boatemaa Addo</h1>
+                <div class="card-time">Saturday, 6th June 2026 | 12:00 PM Prompt</div>
+                <p class="card-body">
+                    <strong>ATTENTION ALL MEMBERS!</strong> We are overwhelmed with joy to announce the coming together of our beloved brother and sister in Christ. The Amoakos and Addos cordially invite the entire congregation to witness this beautiful union. Come support them with your prayers and presence!<br><br>
+                    <strong>⛪ Venue:</strong> The Church of Pentecost, Amanfrom Central Auditorium<br>
+                    <strong>✨ Tags:</strong> #BecomingAmoakoAddo
+                </p>
+            </div>
+
+            <div class="card" data-expiry="2026-11-16">
+                <span class="card-tag" style="background-color: #e0f2fe; color: #0369a1;">The Chair Project</span>
+                <img src="WhatsApp Image 2.jpeg" class="card-image" alt="Annual Fundraising Flyer">
+                <h1 class="card-title">THE MEGA OFFERING (2026 Annual Fundraising)</h1>
+                <div class="card-time">Target Deadline: Sunday, 15th Nov 2026</div>
+                <p class="card-body" style="margin-bottom: 12px;">
+                    The Church of Pentecost, <strong>Amanfrom English Assembly</strong> warmly invites all members and associates to participate in our Annual Fundraising Programme toward the purchase of comfortable, modern auditorium chairs. 
+                </p>
+                <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 10px; margin-bottom: 12px; border-radius: 4px; font-size: 13px;">
+                    <span style="color: #166534; font-weight: bold;">Project Target Goal:</span> <strong>GHC 140,000</strong><br>
+                    <span style="color: #475569;">All payments should go into the official Church accounts. Our able finance team, <strong>John and Naomi</strong>, will update the list of pledges and payments. Let’s do this to the glory of God, it’s from May to November 2026. God Bless You</span>
+                </div>
+            </div>
+
+            <div class="card" data-expiry="2026-06-08">
+                <span class="card-tag" style="background-color: #e0f2fe; color: #0369a1;">COMMUNION SUNDAY</span>
+                <img src="WhatsApp Image 1.jpeg" class="card-image" alt="Communion Service Flyer">
+                <h1 class="card-title">Sunday Service & Lord's Supper</h1>
+                <div class="card-time">Sunday, 7th June 2026 | 7:00 AM Prompt</div>
+                <p class="card-body">
+                    <strong>COMMUNION SERVICE:</strong> Next week Sunday is a Communion Service. Let us come prepared in heart and mind to partake together at the Lord’s table.<br><br>
+                    <strong>May Tithes Closing:</strong> Next Sunday also marks the official closing for the month of May's tithes. If you haven't yet fulfilled your tithe for May, please do so next week.<br><br>
+                    <strong>Missions Offertory:</strong> Additionally, we will be taking a special Missions Offertory. Let us prepare to give generously toward supporting the work of missions.<br><br>
+                    <strong>Let’s keep these in mind and prepare accordingly. Thank you, and God bless you.</strong> 
+                </p>
+            </div>
+
+            <div class="card" data-expiry="2026-06-07">
+                <span class="card-tag" style="background-color: #e0f2fe; color: #0369a1;">BIBLE STUDY AND HOME CELL</span>
+                <img src="WhatsApp Image 4.jpeg" class="card-image" alt="BIBLE STUDY AND HOME CELL">
+                <div style="background-color: #f8fafc; border: 1px dashed #cbd5e1; padding: 12px; border-radius: 6px; font-size: 13px;">
+                    <p style="margin-bottom: 6px; font-weight: 700; color: #1e293b; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;">Official Payment Portal For Tithes and Offerings:</p>
+                    <div><strong>Mobile Money:</strong> <code style="background: #e2e8f0; padding: 2px 4px; border-radius: 4px;"><strong>0243880326</strong></code> <strong>(Amanfrom English Assembly)</strong></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const today = new Date();
+            const currentDateStr = today.toISOString().split('T')[0]; 
+            const cards = document.querySelectorAll('.card[data-expiry]');
+
+            cards.forEach(card => {
+                const expiryDateStr = card.getAttribute('data-expiry');
+                if (currentDateStr >= expiryDateStr) {
+                    card.remove();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
